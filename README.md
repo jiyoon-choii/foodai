@@ -2,13 +2,13 @@
 Description
 
 ## Installion instructions
-First build the docker image:
+First build the docker image, type these command in the base directory:
 ```bash
 docker build -t foodai .
 ```
 And run the docker image:
 ```bash
-docker run -it -p 8888:8888 -v src:/root/src foodai bash
+docker run -it -p 8888:8888 -v $PWD/src:/notebooks/src foodai bash
 
 ```
 
