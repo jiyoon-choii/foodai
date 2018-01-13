@@ -6,6 +6,8 @@ ARG KERAS_VERSION=2.1.2
 
 # Install some dependencies
 RUN apt-get update && apt-get install -y \
+    gdb \
+    python2.7-dbg \
     git \
     && \
     apt-get clean && \
