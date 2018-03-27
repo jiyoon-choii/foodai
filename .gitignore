@@ -2,6 +2,8 @@
 # Created by https://www.gitignore.io/api/macos,python
 ### User defined ###
 
+.idea
+
 # Data directory
 foodai/data
 
