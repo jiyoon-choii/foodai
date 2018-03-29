@@ -14,7 +14,7 @@ def main(argv):
     topModelWeightsPath = 'bottleneck_fc_model.h5'
     trainDataDir = 'data/train'
     validationDataDir = 'data/validation'
-    epochs = 50
+    epochs = 1
     batchSize = 16
     outputFile = 'foodai_model.h5'
     try:
@@ -26,7 +26,7 @@ def main(argv):
             "validationDataDir=",
             "epochs=",
             "batchSize=",
-            "saveDir="])
+            "outputFile="])
     except getopt.GetoptError:
         print (
             'usage: foodai.py --imgWidth=<imgWidth> --imgHeight=<imgHeight> --topModelWeightsPath=<topModelWeightsPath> --trainDataDir=<trainDataDir> --validationDataDir=<validationDataDir> --epochs=<epochs> --batchSize=<batchSize> --outputFile=<outputFile>')

@@ -3,6 +3,7 @@
 ### User defined ###
 
 .idea
+.ipynb_checkpoints
 
 # Data directory
 foodai/data
