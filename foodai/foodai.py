@@ -74,8 +74,8 @@ def main(argv):
 
     initRecognition(imgWidth, imgHeight, topModelWeightsPath, trainDataDir, validationDataDir, epochs, batchSize,
                     trainDataSize, validationDataSize)
-    # resolveRecognition(imgWidth, imgHeight, topModelWeightsPath, trainDataDir, validationDataDir, epochs, batchSize,
-    #                    trainDataSize, validationDataSize, outputFile)
+    resolveRecognition(imgWidth, imgHeight, topModelWeightsPath, trainDataDir, validationDataDir, epochs, batchSize,
+                       trainDataSize, validationDataSize, outputFile)
 
 
 def resolveRecognition(imgWidth, imgHeight, topModelWeightsPath, trainDataDir, validationDataDir, epochs, batchSize,
