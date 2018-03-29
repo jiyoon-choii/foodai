@@ -14,7 +14,7 @@ def main(argv):
     topModelWeightsPath = 'bottleneck_fc_model.h5'
     trainDataDir = 'data/train'
     validationDataDir = 'data/validation'
-    epochs = 1
+    epochs = 50
     batchSize = 16
     outputFile = 'foodai_model.h5'
     try:
@@ -74,8 +74,8 @@ def main(argv):
 
     initRecognition(imgWidth, imgHeight, topModelWeightsPath, trainDataDir, validationDataDir, epochs, batchSize,
                     trainDataSize, validationDataSize)
-    resolveRecognition(imgWidth, imgHeight, topModelWeightsPath, trainDataDir, validationDataDir, epochs, batchSize,
-                       trainDataSize, validationDataSize, outputFile)
+    # resolveRecognition(imgWidth, imgHeight, topModelWeightsPath, trainDataDir, validationDataDir, epochs, batchSize,
+    #                    trainDataSize, validationDataSize, outputFile)
 
 
 def resolveRecognition(imgWidth, imgHeight, topModelWeightsPath, trainDataDir, validationDataDir, epochs, batchSize,
