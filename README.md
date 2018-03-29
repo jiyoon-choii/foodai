@@ -29,6 +29,15 @@ To delete all dangling volumes, use the following command
 docker volume rm `docker volume ls -q -f dangling=true`
 ```
 
+## Conda cheatsheet
+
+```bash
+conda env create -f environment.yml
+source activate foodai
+source deactivate foodai
+```
+
+
 ## Datasets
 - [Food-5k and Food-11](https://mmspg.epfl.ch/food-image-datasets)
 
@@ -42,3 +51,5 @@ docker volume rm `docker volume ls -q -f dangling=true`
 - [Keras](https://github.com/keras-team/keras)
 - [Tensorflow](https://github.com/tensorflow/tensorflow)
 - [This Dockerfile is based on the Tensorflow image](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/docker)
+- https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d
+- https://conda.io/miniconda.html
